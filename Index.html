@@ -1,0 +1,377 @@
+<html>
+
+<head>
+	<title>Indian Airlines.__.</title>
+	<link rel="icon" href="M.png" type="image/png" sizes="16x16">
+	<script type="text/javascript">
+
+		var titleText = document.title;
+
+		function titleMarquee() {
+
+			titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
+			document.title = titleText;
+			setTimeout("titleMarquee()", 450);
+		}
+
+	</script>
+</head>
+
+<style>
+	body {
+		margin: 0;
+		font-family: Playfair display;
+		font-weight: bolder;
+		background-color: #00bff0;
+		overflow: scroll;
+		/*background-image: url("2.jpg");*/
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 50%;
+	}
+
+
+
+	::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Style the body */
+
+
+	/* Header/logo Title */
+	.header {
+		padding: 80px;
+		text-align: left;
+		background: #1abc9c;
+		color: white;
+		font-size: 70px;
+	}
+
+	/* Increase the font size of the heading */
+	.header h1 {
+		font-size: 40px;
+	}
+
+	/* Style the top navigation bar */
+	.navbar {
+		overflow: hidden;
+		background-color: rgb(92, 92, 241);
+	}
+
+	/* Style the navigation bar links */
+	.navbar a {
+		float: left;
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 20px;
+		text-decoration: none;
+	}
+
+	/* Right-aligned link */
+	.navbar a.right {
+		float: right;
+	}
+
+	/* Change color on hover */
+	.navbar a:hover {
+		background-color: #00bff0;
+		color: black;
+	}
+
+
+	hr {
+		border-color: black;
+		background-color: black;
+		margin: 0;
+
+	}
+
+	.header {
+		padding: 60px;
+		text-align: left;
+		background-image: url("G.png");
+		color: white;
+		font-size: 50px;
+		height: 70%;
+		font-style: italic;
+
+	}
+
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #111;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+	}
+
+	.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+	}
+
+	.sidenav a:hover {
+		color: #f1f1f1;
+	}
+
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+
+	@media screen and (max-height: 450px) {
+		.sidenav {
+			padding-top: 15px;
+		}
+
+		.sidenav a {
+			font-size: 18px;
+		}
+	}
+
+	/*.size {
+		padding-left: 20%;
+		padding-top: 50px;
+		background-color: #1abc9c;
+		height: 120%;
+		margin-top: 0px;
+
+	}
+
+	.goside {
+		padding: auto;
+		margin-left: 80%;
+		height: 400px;
+		width: 400px;
+	}*/
+	.submit {
+		background-color: black;
+		color: whitesmoke;
+		height: 50px;
+		width: 80px;
+	}
+
+	.reset {
+		background-color: black;
+		color: whitesmoke;
+		height: 50px;
+		width: 80px;
+
+	}
+
+	.submit:active {
+		background-color: white;
+		color: black;
+	}
+
+	.reset:active {
+		background-color: white;
+		color: black;
+	}
+
+	table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	td,
+	th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+	}
+
+	.AirAsia {
+		background: red;
+		
+	}
+
+	.AirAsia:active {
+		background-color: black;
+		color: red;
+	}
+
+	.Indigo {
+		background-color: rgb(70, 70, 248);
+		width: 17%;
+		
+	}
+
+	.Indigo:active {
+		background-color: black;
+		color: white;
+	}
+
+	.SpiceJet {
+		background: rgb(212, 0, 0);
+		width: 17%;
+	}
+
+	.SpiceJet:active {
+		background-color: black;
+		color: red;
+
+
+	}
+
+	/* Set a style for all buttons */
+	button {
+		background-color: #04AA6D;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+	}
+</style>
+
+<body onclick="gfg_Run()" onload="titleMarquee()">
+	<hr style=" height: 20px; background-color: rgb(94, 94, 255);">
+	<script>
+		document.addEventListener('contextmenu', event => event.preventDefault(alert("Right Click is disabled.")));
+	</script>
+	<div class="header">
+		<h1>Welcome to,</h1>
+		<p style="font-size: 30px;">Indian Airlines</p>
+	</div>
+	<marquee>Just for your safety please read this➡ Caution ⚠:Remember this website is not the real airplane booking
+		site. so don't enter real things related to your account.</marquee>
+	<div class="navbar">
+		<a href="#" onclick="openNav()">&#9776;</a>
+		<a href="#" onclick="alert('You are at homepage')">Home</a>
+		<a href="#LinkAbhinav">Book Tickets.</a>
+		<a href="#"
+			onclick="alert('An airplane or aeroplane is a fixed-wing aircraft that is propelled forward by thrust from a jet engine, propeller, or rocket engine. Airplanes come in a variety of sizes, shapes, and wing configurations.')">Read
+			More</a>
+		<a href="#" onclick="alert('Just For Display...')" class="right">Beverages</a>
+	</div>
+	<h2 style="text-align: center;"></h2>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="about.html">About</a>
+		<a href="https://abhinav8186.github.io/My-portfolio/" target="_blank">Creator's portfolio</a>
+		<a href="#contact">Contact</a>
+	</div>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	<script>
+		function myFunction(x) {
+			if (x.matches) { // If media query matches
+				alert('Please use computer or laptop for better experience')
+				
+			} else {
+				document.body.style.backgroundColor = "#00bff0";
+			}
+		}
+		var x = window.matchMedia("(max-width: 800px)")
+		myFunction(x) // Call listener function at run time
+		x.addListener(myFunction)
+	</script>
+	<center>
+		<h2>Check out various airplanes.</h2>
+		<h3>Our brands</h3>
+		<div class="size">
+			<table id="LinkAbhinav">
+				<tr style="background-color: whitesmoke;">
+					<th><img src="logo.png" style="padding: 50px;" width="150px"></th>
+					<th><img src="logo2.png" style="padding: 50px;" width="150px"></th>
+					<th><img src="yh.jpg" style="padding: 50px;" width="150px"></th>
+				</tr>
+			</table>
+		</div>
+		<hr id="he">
+		<table>
+			<tr>
+				<th>Sr.no</th>
+				<th>AirLine</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>AirAsia Jet1</td>
+				<td><a href="AirAsia Jet1.pdf" download onclick="alert('Ticket will get dowloaded soon.')"><button
+							class="AirAsia" style="width:auto;">Book Now</button></a>
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>AirAsia Jet2</td>
+				<td><a href="AirAsia Jet2.pdf" download onclick="alert('Ticket will get dowloaded soon.')"><button
+							class="AirAsia" style="width:auto;">Book Now</button></a>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>IndiGo Jet1</td>
+				<td><a href="IndiGo Jet1.pdf" download onclick="alert('Ticket will get dowloaded soon.')"><button
+							class="Indigo">Book Now</button></a></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>IndiGo Jet2</td>
+				<td><a href="IndiGo Jet2.pdf" download onclick="alert('Ticket will get dowloaded soon.')"><button
+							class="Indigo">Book Now</button></a></td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>SpiceJet Jet1</td>
+				<td><a href="SpiceJet Jet1.pdf" download onclick="alert('Ticket will get dowloaded soon.')"><button
+							class="SpiceJet">Book Now</button></a></td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>SpiceJet Jet2</td>
+				<td><a href="SpiceJet Jet2.pdf" download onclick="alert('Ticket will get dowloaded soon.')"><button
+							class="SpiceJet">Book Now</button></a></td>
+			</tr>
+
+		</table>
+
+	</center>
+
+	<footer id="contact" style="background-color: rgb(94, 94, 255); padding: 100px;">
+		<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+			<h1>Contact us:</h1>
+
+			<text>Name:</text>
+			<p><input type="text" style="width: 100%; height: 45px; font-size: 30px; font-family: Agency FB;">
+			</p>
+			<p><text>Email:</text></p>
+			<p><input type="text" style="width: 100%; height: 45px; font-size: 30px; font-family: Agency FB;">
+			</p>
+			<p><text>Message:</text></p>
+			<p><textarea style="width: 100%; height: 100px; font-size: 25px; font-family: Agency FB;"></textarea></p>
+			<p><button class="submit" type="submit" value="Submit">Submit</button> <button class="reset" type="reset"
+					value="reset">Reset</button></p>
+			<h3 style="text-align: center;">AirIndia.com</h3>
+		</form>
+		<h3>More from us:</h3>
+		<a href="https://abhinav8186.github.io/Halloween-driver/index.html" target="_blank">Halloween-driver</a>
+
+	</footer>
+
+
+</body>
+
+</html>
